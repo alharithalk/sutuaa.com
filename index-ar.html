@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>sutuaa</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }  
+  .jumbotron {
+    background-color: #2d94b5;
+    color: #fff;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: #2d94b5;
+    font-size: 50px;
+  }
+  .service-icon{
+    height: 70px;
+    width: 70px;
+  }
+  .logo {
+    color: #2d94b5;
+    font-size: 200px;
+    
+  }
+  .logo-nav{
+    height: 200px;
+    width: 150px;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #2d94b5;
+  }
+  .carousel-indicators li {
+    border-color: #2d94b5;
+  }
+  .carousel-indicators li.active {
+    background-color: #2d94b5;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid #2d94b5; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #2d94b5;
+    background-color: #fff !important;
+    color: #2d94b5;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: #2d94b5 !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #2d94b5;
+    color: #fff;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: #2d94b5;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+    
+    
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #2d94b5 !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #2d94b5;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a  href="#myPage"><img src="sutuaa web.png" alt="Home" height="100px" width="150px class="navbar-brand" ></a>
+    </div>
+    <!--class="navbar-brand"-->
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">عن سـطـوع</a></li>
+        <li><a href="#services">خدماتنا</a></li>
+        <li><a href="#portfolio">مـلفنا</a></li>
+        <!--<li><a href="#pricing">PRICING</a></li>-->
+        <li><a href="#contact">تـواصل معـنا</a></li>
+        <li><a href="index.html">enlish</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>سـطـوع</h1> 
+  <p>استمتع بمساحات ساطعة</p> 
+  <!--
+  <form>
+    <div class="input-group">
+      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-danger">Subscribe</button>
+      </div>
+    </div>
+  </form>
+  -->
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>عن سـطـوع</h2><br>
+      <h4>شركة سطوع هي شركة ناشئة مجهزة تجهيزً ا عاليا ومتخصصة في تقديم خدمات التنظيف 
+        الاحترافية للمؤسسات والأفراد والمرافق العامة.
+        مع فريق متخصص من عمال النظافة الماهرة ومعدات التنظيف الحديثة، نحن ملتزمون بتقديم 
+        حلول تنظيف استثنائية تضمن النظافة وبيئة ساطعة لعملائنا الكرام.</h4><br>
+
+      <p>تقدم سطوع خدماتها في كافة محافظات سلطنة عمان 
+        في سطوع ، نعطي الأولوية للجودة والتميز في كل جانب من جوانب عملنا. يتكون فريقنا من عمال النظافة 
+        المدربين تدريباً عالياً وذوي الخبرة الذين يكرسون جهودهم لتقديم خدمات التنظيف على أعلى مستوى. 
+        نستخدم أيضً ا أحدث معدات وأدوات التنظيف ومنتجات التنظيف الصديقة للبيئة لضمان التنظيف الفعال 
+        والشامل مع تقليل التأثير البيئي.
+        </p>
+      <br><a href="#contact"><button class="btn btn-default btn-lg">تـواصل معـنا</button> </a> 
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-signal logo"></span>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>قيـمنا</h2><br>
+      <h4><strong>مهـمتنا :</strong> مهمتنا هي أن نكون المزود الرائد لخدمات التنظيف عالية الجودة ، ونقدم مجموعة 
+        شاملة من حلول التنظيف للمؤسسات والأفراد. نهدف إلى تجاوز توقعات العملاء من 
+        خلال تقديم نتائج تنظيف فائقة وخدمة عملاء استثنائية والالتزام بالاستدامة البيئية.</h4><br>
+
+
+      <p><strong>رضـاء العمـلاء:</strong> رضا العملاء هو جوهر عملنا. نحن نسعى جاهدين لبناء علاقات طويلة الأمد مع عملائنا من خلال فهم 
+        ً احتياجاتهم الفريدة وتقديم حلول تنظيف مخصصة. فريق دعم العملاء المتجاوب لدينا متاح دائما للرد على 
+        أي استفسارات أو مخاوف على الفور ، مما يضمن تجربة سلسة لعملائنا.
+        </p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+  <h2>خــــــدمـــاتــنـــا</h2>
+  <h4>ماذا نقدم؟</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span ><image src="icons/house-cleaning.png" class="service-icon"></image></span>
+      <h4>التنظيف السكني</h4>
+      <p>نحن نقدم خدمات تنظيف سكنية شاملة تغطي التنظيف الدوري، والتنظيف العميق ، والتنظيف بعد 
+        ً البناء. يضمن الكادر التشغيلي لدينا تنظيف كل زاوية وركن في منزلك تماما ، مما يتركه نظيفً ا وساطعا.</p>
+    </div>
+    <div class="col-sm-4">
+      <span ><image src="icons/office-building.png" class="service-icon"></image></span>
+      <h4>التنظيف التجاري</h4>
+      <p>نقدم حلول تنظيف تجارية مخصصة لمختلف المؤسسات ، بما في ذلك المكاتب والمدارس ومرافق الرعاية الصحية ومتاجر البيع 
+        بالتجزئة والمزيد. تم تدريب فريقنا على التعامل مع متطلبات التنظيف المحددة للصناعات المختلفة ، مما يضمن بيئة نظيفة 
+        ومعقمة للموظفين والزوار والعملاء.</p>
+    </div>
+    <div class="col-sm-4">
+      <span ><image src="icons/sofa.png" class="service-icon"></image></span>
+      <h4>تنظيف السجاد والمفروشات</h4>
+      <p>تسمح لنا تقنيات ومعدات التنظيف المتقدمة لدينا بتنظيف السجاد والمفروشات بفعالية ، وإزالة الأوساخ والبقع والروائح 
+        الكريهة. نحن نساعد عملائنا في الحفاظ على نظافة السجاد والأثاث الخاص بهم وديمومته.</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span ><image src="icons/window.png" class="service-icon"></image></span>
+      <h4>تنظيف النوافذ</h4>
+      <p>تقدم سطوع خدمات تنظيف النوافذ الاحترافية لكل من العقارات السكنية والتجارية. تم تجهيز فريقنا للتعامل مع النوافذ من 
+        جميع الأحجام و ً الارتفاعات المتفاوتة ، مما يضمن نوافذ خالية من الاوساخ ونقية تماما تعزز مظهر مساحتك.</p>
+    </div>
+    <div class="col-sm-4">
+      <span ><image src="icons/nanoo.png" class="service-icon"></image></span>
+      <h4>Nanotechnology Protection</h4>
+      <p>With cutting-edge advancements in nanotechnology, we have taken cleaning and protection to a whole new level. Our service employs tiny, engineered particles that form a protective shield on various surfaces, creating a barrier against dirt, stains, and even harmful microbes. Experience the power of nanotechnology with our unmatched protection service, providing you with peace of mind and a truly elevated cleaning experience.</p>
+    </div>
+    <div class="col-sm-4">
+      <span ><image src="icons/pest-control.png" class="service-icon"></image></span>
+      <h4>Pest control</h4>
+      <p>We are committed to providing effective solutions to eliminate harmful pests and rodents that threaten your homes and establishments. We rely on a team of highly trained experts who analyze and assess the problem, offering innovative and suitable solutions. We utilize the latest environmentally safe technologies and pesticides to effectively and permanently eliminate pests and rodents.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <h2>مـلفنا </h2><br>
+  <h4>What we have created</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="photo/commercial2.png" alt="Heavy cleaning" width="400" height="300">
+        <p><strong>التنـظـيف العـميـق </strong></p>
+        <p>Yes, we have Heavy cleaning</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="photo/assets2.png" alt="Sofa cleaning " width="400" height="300">
+        <p><strong>تنظيف الكنبـات </strong></p>
+        <p>Yes, we have Sofa cleaning</p>
+      </div>
+    </div>
+    
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="photo/window.png" alt="Window cleaning" width="400" height="300">
+        <p><strong>تنظيف النـوافـذ</strong></p>
+        <p>Yes, we clean window</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="photo/carpet.png" alt="Carpet cleaning" width="400" height="300">
+        <p><strong>تنـظيف السـجاد </strong></p>
+        <p>Carpet cleaning our game</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="photo/bath.png" alt="Bathroom cleaning" width="400" height="300">
+        <p><strong>تنـظيف السـجاد </strong></p>
+        <p>we keep it like new</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="photo/assets.png" alt="Assets cleaning" width="400" height="300">
+        <p><strong>تنـظيف الاثـاث= </strong></p>
+        <p>look like wakala</p>
+      </div>
+    </div>
+  </div><br>
+  
+  <h2>ماذا قال زبائـننا </h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"We appreciate your trust in our services, and we always strive to be the best and preferred choice for all your properties."<br><span>AlHarith Alkindi , yay app</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Excellent and fast services. We excellent in marble cleaning."<br><span>Mohammed , jim caffe</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Excellent services, everything looks brand new, and we are meticulous in our work."<br><span>Moza, business women </span></h4>
+      </div>
+      <div class="item">
+        <h4>"hello shiny place."<br><span> Mahmood, director </span></h4>
+      </div>
+      
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!-- Container (Pricing Section) -->
+<!--
+<div id="pricing" class="container-fluid">
+  <div class="text-center">
+    <h2>Pricing</h2>
+    <h4>Choose a payment plan that works for you</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Basic</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>20</strong> Lorem</p>
+          <p><strong>15</strong> Ipsum</p>
+          <p><strong>5</strong> Dolor</p>
+          <p><strong>2</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$19</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Pro</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>50</strong> Lorem</p>
+          <p><strong>25</strong> Ipsum</p>
+          <p><strong>10</strong> Dolor</p>
+          <p><strong>5</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$29</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Premium</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>100</strong> Lorem</p>
+          <p><strong>50</strong> Ipsum</p>
+          <p><strong>25</strong> Dolor</p>
+          <p><strong>10</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$49</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+-->
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">تـواصل معـنا</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>تـواصل معـنا وسنـقوم بالرد عليـكم خـلال 24 سـاعة </p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>مسقط سلطنة عمان</p>
+      <p><span class="glyphicon glyphicon-phone"></span> <a href="https://api.whatsapp.com/send/?phone=96890288890&text&type=phone_number&app_absent=0">+968 9028 8890</a> </p>
+      <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:info@sutuaa.com">info@sutuaa.com  </a> </p>
+    </div>
+    
+    
+    
+      <div class="col-sm-7 slideanim">
+        
+        <!-- 
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="number" name="number" placeholder="number" type="text" required>
+          </div>
+        </div>
+        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+        <div class="row">
+          <div class="col-sm-12 form-group">
+            <button class="btn btn-default pull-right" type="submit">Send</button>
+          </div>
+        </div>
+        -->
+      </div>
+  
+  
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<!--
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+-->
+
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p> &copy; Copyright   2023 </p>
+  <p> &reg; Sutuaa</p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
