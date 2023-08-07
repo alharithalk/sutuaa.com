@@ -9,10 +9,15 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
+    .ltr-direction {
+      direction: ltr;
+    }
   body {
     font: 400 15px "DIN Next LT W23", sans-serif;
     line-height: 1.8;
     color: #818181;
+    text-align: right;
+    direction: rtl;
   }
   h2 {
     font-size: 24px;
@@ -258,7 +263,7 @@
 <div id="about" class="container-fluid">
   <div class="row">
     <div class="col-sm-8">
-      <h2>عن سـطـوع</h2><br>
+      <h2 style="color:#2d94b5;">عن سـطـوع</h2><br>
       <h4>شركة سطوع هي شركة ناشئة مجهزة تجهيزً ا عاليا ومتخصصة في تقديم خدمات التنظيف 
         الاحترافية للمؤسسات والأفراد والمرافق العامة.
         مع فريق متخصص من عمال النظافة الماهرة ومعدات التنظيف الحديثة، نحن ملتزمون بتقديم 
@@ -284,13 +289,13 @@
       <span class="glyphicon glyphicon-globe logo slideanim"></span>
     </div>
     <div class="col-sm-8">
-      <h2>قيـمنا</h2><br>
-      <h4><strong>مهـمتنا :</strong> مهمتنا هي أن نكون المزود الرائد لخدمات التنظيف عالية الجودة ، ونقدم مجموعة 
+      <h2 style="color:#2d94b5;">قيـمنا</h2><br>
+      <h4><strong style="color:#2d94b5;">مهـمتنا :</strong> مهمتنا هي أن نكون المزود الرائد لخدمات التنظيف عالية الجودة ، ونقدم مجموعة 
         شاملة من حلول التنظيف للمؤسسات والأفراد. نهدف إلى تجاوز توقعات العملاء من 
         خلال تقديم نتائج تنظيف فائقة وخدمة عملاء استثنائية والالتزام بالاستدامة البيئية.</h4><br>
 
 
-      <p><strong>رضـاء العمـلاء:</strong> رضا العملاء هو جوهر عملنا. نحن نسعى جاهدين لبناء علاقات طويلة الأمد مع عملائنا من خلال فهم 
+      <p><strong style="color:#2d94b5;" >رضـاء العمـلاء:</strong> رضا العملاء هو جوهر عملنا. نحن نسعى جاهدين لبناء علاقات طويلة الأمد مع عملائنا من خلال فهم 
         ً احتياجاتهم الفريدة وتقديم حلول تنظيف مخصصة. فريق دعم العملاء المتجاوب لدينا متاح دائما للرد على 
         أي استفسارات أو مخاوف على الفور ، مما يضمن تجربة سلسة لعملائنا.
         </p>
@@ -301,7 +306,7 @@
 <!-- Container (Services Section) -->
 <div id="services" class="container-fluid text-center">
   <h2>خــــــدمـــاتــنـــا</h2>
-  <h4>ماذا نقدم؟</h4>
+  <h4> في سطوع , نقدم مجموعة واسعةن من خدمات التنظيف المصممة لتلبية احتياجات عملائنا الفريدة تشمل :</h4>
   <br>
   <div class="row slideanim">
     <div class="col-sm-4">
@@ -349,8 +354,8 @@
 
 <!-- Container (Portfolio Section) -->
 <div id="portfolio" class="container-fluid text-center bg-grey">
-  <h2>مـلفنا </h2><br>
-  <h4>ماذا فعلنا</h4>
+  <h2>أعــمــالــنــا </h2><br>
+  <h4>نـبـذة عـن أعــمــالــنــا </h4>
   <div class="row text-center slideanim">
     <div class="col-sm-4">
       <div class="thumbnail">
@@ -391,8 +396,8 @@
     <div class="col-sm-4">
       <div class="thumbnail">
         <img src="photo/assets.png" alt="Assets cleaning" width="400" height="300">
-        <p><strong>تنـظيف الاثـاث= </strong></p>
-        <p>look like wakala</p>
+        <p><strong>تنـظيف الاثـاث</strong></p>
+        <p>نحول الغبار الى الماس </p>
       </div>
     </div>
   </div><br>
@@ -505,16 +510,37 @@
 </div>
 -->
 
-<!-- Container (Contact Section) -->
-<div id="contact" class="container-fluid bg-grey">
-  <h2 class="text-center">تـواصل معـنا</h2>
-  <div class="row">
-    <div class="col-sm-5">
-      <p>تـواصل معـنا وسنـقوم بالرد عليـكم خـلال 24 سـاعة </p>
-      <p><span class="glyphicon glyphicon-map-marker"></span>مسقط سلطنة عمان</p>
-      <p><span class="glyphicon glyphicon-phone"></span> <a href="https://api.whatsapp.com/send/?phone=96890288890&text&type=phone_number&app_absent=0">+968 9028 8890</a> </p>
-      <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:info@sutuaa.com">info@sutuaa.com  </a> </p>
+<!-- Container (Contact Section) 
+
+    <div id="contact" class="container-fluid bg-grey" >
+      <h2 class="text-center">تـواصل معـنا</h2>
+      <div class="row">
+        <div class="col-6">
+          <p> استمتع بتجربة سطوع ! لمعرفة المزيد عن خدماتنا أو لتحديد موعد تنظيف، يرجى التواصل معنا: </p>
+          <p><span class="glyphicon glyphicon-map-marker"></span>مسقط سلطنة عمان</p>
+          <p ><span class="glyphicon glyphicon-phone"></span> <a href="https://api.whatsapp.com/send/?phone=96890288890&text&type=phone_number&app_absent=0" >+968 9028 8890</a> </p>
+          <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:info@sutuaa.com">info@sutuaa.com  </a> </p>
+        </div>
+      </div>
+    </div>-->
+
+    <div id="contact" class="container-fluid bg-grey">
+      <h2 class="text-center">تـواصل معـنا</h2>
+      <div class="row">
+        <div class="col-6">
+          <p> استمتع بتجربة سطوع ! لمعرفة المزيد عن خدماتنا أو لتحديد موعد تنظيف، يرجى التواصل معنا: </p>
+          <p><span class="glyphicon glyphicon-map-marker"></span>مسقط سلطنة عمان</p>
+          <p>
+            <span class="glyphicon glyphicon-phone"></span>
+            <span class="ltr-direction">
+              <a href="https://api.whatsapp.com/send/?phone=96890288890&text&type=phone_number&app_absent=0">واتس اب</a>
+            </span>
+          </p>
+          <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:info@sutuaa.com">info@sutuaa.com</a></p>
+        </div>
+      </div>
     </div>
+    
     
     
     
